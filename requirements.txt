@@ -1,0 +1,23 @@
+coverage
+dlib==19.22.0
+grpcio==1.32.0
+imutils==0.5.4
+matplotlib==3.4.1
+numpy==1.19.5
+opencv-contrib-python==4.5.1.48
+opencv-python==3.4.14.51
+pandas==1.2.4
+pylint
+scikit-image==0.18.1
+scipy==1.6.2
+# setuptools==56.2.0
+tensorboard==2.5.0
+tensorboard-data-server==0.6.0
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.4.1
+tensorflow-estimator==2.4.0
+termcolor==1.1.0
+tifffile==2021.4.8
+tqdm==4.60.0
+Shapely
+six==1.15.0

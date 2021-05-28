@@ -1,0 +1,24 @@
+language: python
+os:
+  linux
+dist:
+  focal
+python:
+  - "3.8"
+install:
+  - pip install -r requirements.txt
+script:
+  - coverage run --source=src.get_colortypes_csv -m unittest tests/tests.py
+after_success:
+  - coverage report -i
+  - python setup.py bdist_wheel
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key: 
+    secure: itvmoBtqBmsLTRyeTAc4zeNSvZBeYjVMA6hp0n1OYwA5/NkB/jyfms29NiOrnej9irmmmcOxLmLTePU/0hQST0R48f7G0ios8xXhRSbLpjOD1jaxr4RsdRM/F0IKYEhTi8/pTxxie4LM33kB2hN0xH9hJxMfxYeKWls/76o7CdhHNO2dxZgnOe9Vs5n0+Yz/qHTsxMXU3t1JbCOj0XDySIpVw5MAx7B6+kkGzh7p5gScCf8vUfYVtgPSR9JdkMXDLBgUUWm16R7iW7b25+LMaLlxtP5ap6QQJOWr2dASAtsK997aaBrLA+5NUG4NzCxOteERt+KGOASuZZQUhR16lbKHAgmjXLz02Z/4dYsQvG78VOrpPYWuf5tdN3DWWnW+1gERYXeAD/I4qQIf7XpBfSPbjEZv8pVM7KV1ejXshTqNCjkINK7LRry9TkOWpVRAbqQ/lDI8sh7/t92S2ypP72/y4ykYmTjKQz+4PYwBzp0R21lAkkN09eY1xum8PsIm/OrRXwrgiRR0JxVNwlPwZiGQ6LSvd6tdV7MY4k6/UhqbLOip6bJByCR4J0v6bC7wRZeiQi8QCxnIiQwzbrvD+d5PolQ5VS3JIJJ3H+Ccapfsf1rwG3WwkTjzMHGqP4pJ4mV2Il82LuR+oSWq3c8i4dsPOavwkewwHVOKi/Lh4ok=
+  file_glob: true
+  file: 
+    - dist/*.whl
+  on:
+    all_branches: true
