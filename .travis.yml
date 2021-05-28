@@ -13,7 +13,7 @@ after_success:
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key: "${GITHUB_TOKEN}"
+  api_key: ${{ secrets.GITHUB_TOKEN }}
   file_glob: true
   file:
   - dist/*.whl
