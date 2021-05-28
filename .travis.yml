@@ -18,7 +18,7 @@ deploy:
   file:
   - dist/*.whl
   on:
-    all_branches: true
+    branch: main
 env:
   global:
     secure: fOI46AjNGckSIVmFeXd8oBSu5XMXPmDOMOzHqviFafE4lmvA1cD3FbId1MzEFomVuJof2WUy6trp2v1OtgdNzTd8z/HzOB37X+uF5WFjwb6/hB2Gm3d6QElnv0HI58zTnOtaO5HsP6gU3U1Isx8SQQTDjmoZTaYJYktIqKhJThGL/3omAlNPuxR3LO/sEaECrxNkzGlPHT6M5rvsqviPWWE9b+3I8HLlC+9k4ipDZbv1/wctmPK1hEp6g3g3VEt7oKDKp8FdGCFsuCIaWI0f20e20xyj5HTadUi/avLmU2qU6hw6+1K+CZ5ols4iPLzZJTEdLPuvtufBM7UnD4jqfgFVq1+NYHEdbUSS0UplVXenV/6JDa/TFEXcbtDxOB0k4qAsOkwENTTjft7khrDkkbXUmKvpHATv8BYFx5t0EugfFfUSIQs9Y5T2guC8Ih6uC75TPAZpRCiEW5wggPbsOpW7iYogYIk+H08rQV9s4P+HvzV2IpfbrycaUsVzqCDY5tyk2jEsIjXEtcV+mabKDwqASAMhYdp2ypC9jlkrXT8MBt7u73FxuBorAvVYEYuusCSGgu80WUESCjWQy2Lu34DuToiqPmd0+8u8X8Gh06lT3b9u0yxItim8AA1WStyDHI5n85RAzr5CC8GKyMQJVRr++qu6ts7BMm8WQat7NFI=
